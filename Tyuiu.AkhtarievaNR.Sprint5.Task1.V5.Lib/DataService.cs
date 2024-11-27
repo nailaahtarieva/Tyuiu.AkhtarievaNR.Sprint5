@@ -19,7 +19,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint5.Task1.V5.Lib
             string strY;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = 5 - 3 * x + ((1 + Math.Sin(x)) / (2 * x - 0.5));
+                y = Math.Round(5 - 3 * x + ((1 + Math.Sin(x)) / (2 * x - 0.5)),2);
                 strY = Convert.ToString(y);
 
                 if (x<= stopValue)
