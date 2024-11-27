@@ -5,19 +5,14 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            double start = 7, end = 9, step = 1;
-            string opF = "OutPutFileTask1.txt";
-            for (double x = start; x<= end; x += step)
+            int[,] array = { { 6, 9, 4 }, { 7, 2, 4 }, { 4, 8, 3 } };
+            int rowSum = 0;
+
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                double res = 2 * x + 3 * Math.Pow(x, 2) - 34;
-                if (double.IsInfinity(res) || double.IsNaN(res))
-                {
-                    res = 0;
-                }
-                res = Math.Round(res, 2);
-                File.AppendAllText(opF, $"{res}\n");
-                Console.WriteLine($"{res}");
+                rowSum += array[1, j];
             }
+            File.WriteAllText("OutPutFileTask2.csv", rowSum.ToString());
         }
     }
 }
