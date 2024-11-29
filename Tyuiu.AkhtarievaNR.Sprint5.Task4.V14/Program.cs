@@ -22,7 +22,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint5.Task4.V14
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"С:\DataSprint5\InPutDataFileTask4V21.txt";
+            string path = @"C:\DataSprint5\InPutDataFileTask4V21.txt";
 
             Console.WriteLine("Данные находятся в файле: " + path);
 
