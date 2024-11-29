@@ -1,6 +1,6 @@
 using System.IO;
-using Tyuiu.AkhtarievaNR.Sprint5.Task4.V14.Lib;
-namespace Tyuiu.AkhtarievaNR.Sprint5.Task4.V14.Test
+using Tyuiu.AkhtarievaNR.Sprint5.Task5.V10.Lib;
+namespace Tyuiu.AkhtarievaNR.Sprint5.Task5.V10.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -8,7 +8,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint5.Task4.V14.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"Ñ:\DataSprint5\InPutDataFileTask4V21.txt";
+            string path = @"Ñ:\DataSprint5\InPutDataFileTask5V10.txt";
 
             FileInfo fileinfo = new FileInfo(path);
             bool fileExists = fileinfo.Exists;
